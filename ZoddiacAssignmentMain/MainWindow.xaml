@@ -1,0 +1,49 @@
+﻿<Window x:Class="ZoddiacAssignmentMain.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZoddiacAssignmentMain"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" >
+    <Grid Background="Transparent">
+
+
+        <TabControl Background="#FF85C7E0">
+            <TabItem x:Name="ZodiacSigns" Header="Zodiac calculator / Caolan Maguire submission / G00385433@gmit.ie" Width="800px" Background="#2F9599">
+                <Grid Margin="-4,0,4,0">
+                    <Grid.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="/zodiac-background.jpg"/>
+                    </Grid.Background>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="495*"/>
+                        <ColumnDefinition Width="48*"/>
+                        <ColumnDefinition Width="27*"/>
+                        <ColumnDefinition Width="48*"/>
+                        <ColumnDefinition Width="176*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBox x:Name="date" HorizontalAlignment="Left" Margin="190,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" Height="26" RenderTransformOrigin="-6.208,2.878" BorderBrush="White" Background="White" FontFamily="Felix Titling"/>
+
+                    <TextBlock HorizontalAlignment="Left" Margin="190,264,0,0" Text="Day" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="58" FontSize="20" RenderTransformOrigin="-1.824,-0.557" FontFamily="Felix Titling" Foreground="White"/>
+
+                    <TextBlock HorizontalAlignment="Left" Margin="289,264,0,0" Text="Month" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="80" RenderTransformOrigin="-0.307,0.726" FontSize="20" FontFamily="Felix Titling" Foreground="White"/>
+
+                    <TextBox x:Name="month" HorizontalAlignment="Left" Margin="287,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="82" Height="26" RenderTransformOrigin="0.628,-0.333" FontFamily="Felix Titling"/>
+
+                    <Button x:Name="sumbit" Content="GO" HorizontalAlignment="Left" Margin="425,284,0,0" VerticalAlignment="Top" Click="Button_Click" Height="36" Width="118" RenderTransformOrigin="0.757,-0.769" FontSize="20" Background="#FF2440BF" Foreground="White" FontFamily="Felix Titling" BorderBrush="White" Grid.ColumnSpan="2"/>
+
+                    <TextBlock HorizontalAlignment="Left" Margin="236,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="3" Height="88" Width="310" FontFamily="Felix Titling" FontWeight="Normal" FontSize="72" Foreground="White" IsEnabled="False"><Run Language="en-ie" Text="ZODIAC"/></TextBlock>
+
+                    <TextBlock HorizontalAlignment="Left" Margin="190,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="55" Width="402" FontSize="18" FontFamily="Felix Titling" Grid.ColumnSpan="4" Foreground="White"><Run Language="en-ie" Text="To find your zodiac sign - enter your birth date below"/><LineBreak/><Run Language="en-ie"/></TextBlock>
+
+                    <TextBlock HorizontalAlignment="Center" Margin="200,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="3" Height="39" Width="370" FontFamily="Felix Titling" FontWeight="Normal" FontSize="24" Foreground="White"><Run Text="Zodiac"/><Run Language="en-ie" Text=" "/><Run Text="ATU Repeat Project"/></TextBlock>
+
+                    <TextBlock HorizontalAlignment="Left" Margin="263,287,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="19" FontSize="36" FontFamily="Felix Titling" RenderTransformOrigin="0.667,2.003" Foreground="White"><Run Language="en-ie" Text="/"/></TextBlock>
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
